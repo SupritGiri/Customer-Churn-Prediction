@@ -1,0 +1,104 @@
+body {
+    background-color: black;
+    color: 	rgb(23, 158, 202);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.form-container {
+    margin-top: 50px;
+    padding: 50px;
+    border: 2.5px solid darkblue;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8); /* Optional: Add semi-transparent background */
+    width: 320px; /* Adjust width to include padding */
+}
+
+form {
+    width: 100%; /* Ensure the form takes the full width of the container */
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form fieldset {
+    margin-bottom: 15px;
+    border: 1px solid rgb(23, 158, 202);
+    padding: 10px;
+}
+
+form legend {
+    color: rgb(23, 158, 202);
+}
+
+form input[type="number"],
+form input[type="radio"],
+form input[type="text"],
+form input[type="email"],
+form select {
+    width: calc(100% - 22px); /* Adjusted width */
+    color: rgb(23, 158, 202);
+    background-color: black;
+    border: 1px solid rgb(23, 158, 202);
+    padding: 8px;
+    border-radius: 0px;
+    margin-top: 5px; /* Added margin */
+}
+
+form input[type="radio"] {
+    margin-right: 5px;
+}
+
+form input[type="number"]::placeholder,
+form input[type="text"]::placeholder,
+form input[type="email"]::placeholder,
+form select::placeholder {
+    color: rgb(23, 158, 202);
+}
+
+form fieldset label {
+    display: inline-block;
+    margin-right: 50px;
+    position: relative; /* Add this */
+}
+
+form input[type="radio"] {
+    position: absolute; /* Add this */
+    right: 50%; /* Add this */
+    top: 30%; /* Add this */
+    transform: translateY(-50%); /* Add this */
+    margin-right: -150px;
+}
+
+button {
+    background-color: darkblue;
+    color: rgb(23, 158, 202);
+    border: 2px solid darkblue;
+    padding: 10px 20px;
+    border-radius: 7px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold; /* Make the text bold */
+}
+
+button:hover {
+    background-color: mediumblue; /* Slightly darker light blue */
+}
